@@ -5,10 +5,10 @@ def _density(mean_density, material_density, material_porosity, water_density):
 
 def productivity(crosssectional_area, mean_density, mean_speed,
                  material_density, material_porosity,
-                 water_density=1000, coeff1=.9, coeff2=1.1, timedelta=1):
+                 water_density=1000, coeff1=.9, coeff2=1.1, time_delta=1):
     density = _density(mean_density, material_density,
                        material_porosity, water_density)
 
     return (coeff1 * coeff2
             * crosssectional_area
-            * mean_speed * density / timedelta)
+            * mean_speed * density / time_delta)
