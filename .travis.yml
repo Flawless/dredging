@@ -1,12 +1,18 @@
 language: python
 python:
-  - "2.7"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev"  # 3.5 development branch
-  - "3.6"
-  - "3.6-dev"  # 3.6 development branch
-  - "3.7-dev"  # 3.7 development branch
-script:
-  nosetests
+- '2.7'
+- '3.3'
+- '3.4'
+- '3.5'
+- 3.5-dev
+- '3.6'
+- 3.6-dev
+- 3.7-dev
+script: nosetests
+deploy:
+  provider: pypi
+  user: Flawless
+  password:
+    secure: AQQnYkENvsyJJhtSn4Vc4GO5ndFFdGzyvc0iNhru0nWYa1IaKyZRzEnn1NY+LWhCJhV7HoY0ZYB2QPIMmVPZDGMiuO5SRHQaaKYIacWpIVOHAleDzaerv/JqohxUqI7TLXIRpUjSHfDzru+UjAIksFWyR9dlt3EqBJDN+uzD45lks5qiuSr5RP2oG5rudmyb8YfLtfYfxoekMogIfs/8cq6rvwBYhpUNI7yj8HZvn3//g/L7PXQnnM8fSpBSIxG9vVz5kochuh3pjelZqfCqFOIaxIsvQTIVy+yRg/GCoKnkirV+bRcXQ20wm/6HuWQIg+yLgcGhJ1z5wz2pjJBd7bU2xEOwK2mCYFP856mNQ82ojpA/leAoh70JBTIKz3lofg2nalgMcv4GwuBq45Wi9RXlulJzYIXmUNa2HvE84LGlYwgADeoZvkO8yfpFcoNTnUqvUxBl2SQS889jyGNptzsu37/Z4LsSvIc71FceZ3fKuxaf42CCnAgVfLD2nvHxgDrN6qTon4ou818+Y6KletQ4Hxcg659EI6YstNJmAOK2s4WzhhQnzmZTYOB9/SGWuEV+3GIK7xJP0cbLVIFMI7pXj5pP0ruXIgKRZB3wz8nqUNoUuyP1uKOfyRRnGGYWifBisGa9NYMvzjzgO4DflbEAVmjWaIVDuvUfzu5gGIo=
+  on:
+    tags: true

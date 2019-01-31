@@ -1,7 +1,8 @@
 from setuptools import setup
 
 setup(name='dredging',
-      version='0.2.4',
+      version_format='{tag}.dev{commitcount}+{gitsha}',
+      setup_requires=['setuptools-git-version'],
       description='Collection of helper functions for dredging math',
       long_description='Collection of helper functions for dredging math',
       url='https://github.com/Flawless/dredging',
