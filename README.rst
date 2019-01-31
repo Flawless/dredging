@@ -1,3 +1,5 @@
+.. image:: https://travis-ci.org/Flawless/dredging.svg?branch=master
+
 Dredging
 ========
 Collection of helper functions for dredging math written in python
