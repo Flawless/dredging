@@ -12,7 +12,7 @@ class TestProductivity(TestCase):
             productivity(.296092, 1011.27, 0.1734, 1760, .3, 1000, 0.9, 1.1),
             .00053, places=5)
         self.assertAlmostEqual(
-            productivity(crossectional_area=.496, mean_density=1111.27,
+            productivity(crosssectional_area=.496, mean_density=1111.27,
                          mean_speed=1.34, material_density=1760,
                          material_porosity=.3, water_density=1014,
                          coeff1=0.9, coeff2=1.1, time_delta=2.5),
