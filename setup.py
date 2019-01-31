@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='dredging',
-      version='0.2.1',
+      version='0.2.2',
       description='Collection of helper functions for dredging math',
       long_description='Collection of helper functions for dredging math',
       url='https://github.com/Flawless/dredging',
